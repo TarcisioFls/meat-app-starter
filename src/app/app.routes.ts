@@ -4,6 +4,7 @@ import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail
 import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { OrderComponent } from './order/order.component';
 
 import { Routes } from "@angular/router";
 
@@ -16,5 +17,8 @@ export const ROUTES: Routes = [
             { path: '', redirectTo: 'menu', pathMatch: 'full' },
             { path: 'menu', component: MenuComponent },
             { path: 'reviews', component: ReviewsComponent }
-        ]}
+        ]
+    },
+    { path: 'order', component: OrderComponent },
+    { path: 'about', component: AboutComponent }
 ]
