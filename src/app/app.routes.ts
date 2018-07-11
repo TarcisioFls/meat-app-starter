@@ -5,6 +5,7 @@ import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { OrderComponent } from './order/order.component';
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
 
 import { Routes } from "@angular/router";
 
@@ -20,5 +21,6 @@ export const ROUTES: Routes = [
         ]
     },
     { path: 'order', component: OrderComponent },
-    { path: 'about', component: AboutComponent }
+    { path: 'about', component: AboutComponent },
+    { path: 'order-summary', component: OrderSummaryComponent }
 ]

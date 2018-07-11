@@ -1,0 +1,5 @@
+<p>
+  <i *ngFor="let ra of rates" class="fa"
+    [class.fa-star]="ra <= rate" [class.fa-star-o]="ra > rate"
+    (click)="setRate(ra)"></i>
+</p>
