@@ -2,9 +2,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'mt-rating-component',
-  templateUrl: './rating-component.component.html'
+  templateUrl: './rating.component.html'
 })
-export class RatingComponentComponent implements OnInit {
+export class RatingComponent implements OnInit {
 
   private rates: number[] = [1,2,3,4,5];
 
