@@ -29,7 +29,7 @@ export class RadioComponent implements OnInit, ControlValueAccessor {
 
   setValue(value: any) {
     this.value = value;
-    this.registerOnChange(this.value);
+    this.onChange(this.value);
   }
 
   /**
