@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 
 import { Routes } from "@angular/router";
+import { NotFoundComponent } from './not-found/not-found.component';
 
 export const ROUTES: Routes = [
     { path: '', component: HomeComponent },
@@ -19,5 +20,6 @@ export const ROUTES: Routes = [
     },
     { path: 'order', loadChildren: './order/order.module#OrderModule' },
     { path: 'about', loadChildren: './about/about.module#AboutModule' },
-    { path: 'order-summary', component: OrderSummaryComponent }
+    { path: 'order-summary', component: OrderSummaryComponent },
+    { path: '**', component: NotFoundComponent }
 ]
